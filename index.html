@@ -18,68 +18,128 @@
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand fst-italic">Coffe <span class="text-warning fw-bold">Shop</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#restaurant-navbar"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="restaurant-navbar">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item px-1">
-                        <a href="#" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a href="#specials" class="nav-link">Specials</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a href="#offers" class="nav-link">Offers</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a href="#services" class="nav-link">Services</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand fst-italic">Coffe <span class="text-warning fw-bold">Shop</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#restaurant-navbar"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="restaurant-navbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item px-1">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a href="#specials" class="nav-link">Specials</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a href="#offers" class="nav-link">Offers</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a href="#services" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- SLIDESHOW -->
-    <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+        <!-- SLIDESHOW -->
+        <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./src/img/slider-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./src/img/slider-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./src/img/slider-3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHome"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./src/img/slider-1.jpg" class="d-block w-100" alt="...">
+    </header>
+    
+    <main>
+        <!-- SPECIALS -->
+        <div class="container-fluid bg-light px-5 py-3" id="specials">
+            <div class="row">
+                <div class="col-12 text-center py-5">
+                    <h2 class="text-dark">Our Specials</h2>
+                    <p class="text-muted">Check out our special offers and discounts!</p>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="./src/img/slider-2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./src/img/slider-3.jpg" class="d-block w-100" alt="...">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="./src/img/special-1.jpg" alt="Special 1" class="img-fluid mb-4">
+                    <h3>Special Coffee</h3>
+                    <p>Enjoy our special blend of coffee at a discounted price.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="./src/img/special-2.jpg" alt="Special 2" class="img-fluid mb-4">
+                    <h3>Pastry Combo</h3>
+                    <p>Get a pastry combo with your favorite drink.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="./src/img/special-3.jpg" alt="Special 3" class="img-fluid mb-4">
+                    <h3>Happy Hour</h3>
+                    <p>Join us for happy hour and enjoy great discounts.</p>
+                </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselHome"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+
+        <!-- OFFERS -->
+        <div class="container-fluid bg-dark px-5 py-3" id="offers">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="text-center text-sm-start col-12 col-sm-8 py-5">
+                    <h2 class="text-light">Our <span class="text-warning">Offers</span></h2>
+                    <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita delectus perferendis maiores quis est unde, assumenda aperiam maxime necessitatibus enim veritatis! Nam cumque, nemo ullam sit enim maxime reprehenderit autem.</p>
+                </div>
+                <div class="col-12 col-sm-4 text-left pb-5 pt-0 pt-sm-5">
+                    <img class="w-100 d-block mx-auto" src="./src/img/offers.jpg" alt="">
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="container-fluid bg-light px-5 py-3" id="services">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-12 col-sm-4 py-5">
+                    <img class="w-100 d-block mx-auto" src="./src/img/services.jpg" alt="">
+                </div>
+                <div class="text-center text-sm-end col-12 col-sm-8 text-left pb-5 pt-0 pt-sm-5">
+                    <h2 class="text-dark">Our <span class="text-warning">Services</span></h2>
+                    <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita delectus perferendis maiores quis est unde, assumenda aperiam maxime necessitatibus enim veritatis! Nam cumque, nemo ullam sit enim maxime reprehenderit autem.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
 
 </body>
 
